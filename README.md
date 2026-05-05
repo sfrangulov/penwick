@@ -1,5 +1,9 @@
 # penwick
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sfrangulov/penwick/main/docs/portrait.png" width="240" alt="Mortimer J. Penwick (1939–1987)" />
+</p>
+
 ```
    ┌──────────────────────────────────────────────┐
    │                                              │
