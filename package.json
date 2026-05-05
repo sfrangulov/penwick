@@ -1,0 +1,54 @@
+{
+  "name": "penwick",
+  "version": "0.1.0",
+  "description": "A pipe utility narrated by the late Mortimer J. Penwick (1939–1987), senior systems programmer.",
+  "type": "module",
+  "bin": {
+    "penwick": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "postbuild": "chmod +x dist/cli.js",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfrangulov/penwick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sfrangulov/penwick/issues"
+  },
+  "homepage": "https://github.com/sfrangulov/penwick#readme",
+  "keywords": [
+    "cli",
+    "pipe",
+    "ai",
+    "anthropic",
+    "openai",
+    "narrate",
+    "eulogy",
+    "fun"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.74",
+    "@ai-sdk/openai": "^3.0.60",
+    "ai": "^6.0.175"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
