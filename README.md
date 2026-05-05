@@ -18,10 +18,11 @@ $ git log --oneline -20 | penwick narrate
 npm install -g penwick
 ```
 
-Set one of:
+Set one of (priority order):
 
-- `ANTHROPIC_API_KEY` (preferred — defaults to `claude-haiku-4-5`)
-- `OPENAI_API_KEY` (fallback — defaults to `gpt-5.4-mini`)
+- `ANTHROPIC_API_KEY` — defaults to `claude-haiku-4-5`
+- `OPENAI_API_KEY` — defaults to `gpt-5.4-mini`
+- `DEEPSEEK_API_KEY` — defaults to `deepseek-chat`
 
 ## Use
 
@@ -51,9 +52,10 @@ lighthouse https://example.com --output=json | penwick judge
 ```sh
 some-cmd | penwick narrate --model openai/gpt-5.4-mini
 some-cmd | penwick eulogize --model anthropic/claude-sonnet-4-5
+some-cmd | penwick judge --model deepseek/deepseek-chat
 ```
 
-Format: `<provider>/<model-id>` where provider is `anthropic` or `openai`.
+Format: `<provider>/<model-id>` where provider is `anthropic`, `openai`, or `deepseek`.
 
 ## License
 

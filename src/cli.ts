@@ -15,14 +15,15 @@ Subcommands:
   judge       A judgment, less ceremonial than an obituary.
 
 Options:
-  --model <id>     Override the model. Format: "anthropic/<id>" or "openai/<id>".
-                   Default: claude-haiku-4-5 (with ANTHROPIC_API_KEY) or gpt-5.4-mini.
+  --model <id>     Override the model. Format: "<provider>/<id>"
+                   where provider is anthropic, openai, or deepseek.
   -h, --help       Show this message.
   -v, --version    Show version.
 
-Environment:
-  ANTHROPIC_API_KEY   Use Anthropic. Preferred when both are set.
-  OPENAI_API_KEY      Use OpenAI as fallback.
+Environment (provider auto-detection, in priority order):
+  ANTHROPIC_API_KEY   default model: claude-haiku-4-5
+  OPENAI_API_KEY      default model: gpt-5.4-mini
+  DEEPSEEK_API_KEY    default model: deepseek-chat
 
 Examples:
   git log --oneline -20 | penwick narrate
