@@ -1,5 +1,24 @@
 # penwick
 
+```
+   ┌──────────────────────────────────────────────┐
+   │                                              │
+   │        IBM PERSONNEL RECORD · 04781          │
+   │        · · · · · · · · · · · · · · · ·       │
+   │                                              │
+   │   NAME      Mortimer J. Penwick              │
+   │   DEPT      Systems Programming              │
+   │   LOC       Poughkeepsie, New York           │
+   │   TENURE    1959 — 1987                      │
+   │   STATUS    Deceased                         │
+   │                                              │
+   │   ──────────────────────────────────────     │
+   │                                              │
+   │   "Define real, sir."                        │
+   │                                              │
+   └──────────────────────────────────────────────┘
+```
+
 A pipe utility narrated by the late **Mortimer J. Penwick** (1939–1987), senior systems programmer at IBM, Poughkeepsie. He retired with arthritis, died of a heart attack the following winter, and now lives in a UNIX pipe. He watches what passes through. He comments on it.
 
 ```

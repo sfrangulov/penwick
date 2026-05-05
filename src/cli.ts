@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { eulogize } from "./eulogize.js";
 import { judge } from "./judge.js";
 import { narrate } from "./narrate.js";
+import { SPLASH } from "./splash.js";
 
 const HELP = `penwick — a pipe utility narrated by the late Mortimer J. Penwick (1939–1987).
 
@@ -75,12 +76,16 @@ async function readVersion(): Promise<string> {
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
 
-  if (args.help || (!args.subcommand && !args.version)) {
+  if (args.help) {
     process.stdout.write(HELP);
     return;
   }
   if (args.version) {
     process.stdout.write(`${await readVersion()}\n`);
+    return;
+  }
+  if (!args.subcommand) {
+    process.stdout.write(SPLASH);
     return;
   }
 
