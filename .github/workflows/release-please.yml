@@ -34,6 +34,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
       - run: npm run build
+      # OIDC Trusted Publishing requires npm >= 11.5; runners ship npm 10.
+      - run: npm install -g npm@latest
+      # Auth via npm OIDC Trusted Publishing (no NPM_TOKEN). Configure on npmjs.com:
+      #   penwick -> Settings -> Trusted Publishers -> GitHub Actions
+      #   owner: sfrangulov | repo: penwick | workflow: release-please.yml
       - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
