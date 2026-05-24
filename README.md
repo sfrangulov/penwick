@@ -4,6 +4,12 @@
   <img src="https://raw.githubusercontent.com/sfrangulov/penwick/main/docs/portrait.png" width="240" alt="Mortimer J. Penwick (1939–1987)" />
 </p>
 
+<p align="center">
+  <a href="https://ephemeris.tools/u/sfrangulov"><img src="https://ephemeris.tools/badge/sfrangulov/penwick/momentum.svg?theme=auto" alt="ephemeris momentum" /></a>
+  <a href="https://ephemeris.tools/u/sfrangulov"><img src="https://ephemeris.tools/badge/sfrangulov/penwick/sparkline.svg?theme=auto" alt="ephemeris sparkline" /></a>
+  <a href="https://ephemeris.tools/u/sfrangulov"><img src="https://ephemeris.tools/badge/sfrangulov/penwick/stars.svg?theme=auto" alt="ephemeris stars" /></a>
+</p>
+
 ```
    ┌──────────────────────────────────────────────┐
    │                                              │
