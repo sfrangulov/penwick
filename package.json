@@ -1,6 +1,6 @@
 {
   "name": "penwick",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A pipe utility narrated by the late Mortimer J. Penwick (1939–1987), senior systems programmer.",
   "type": "module",
   "bin": {
